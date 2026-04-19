@@ -101,7 +101,7 @@
 
 .mobile-cta {
   background: var(--primary);
-  color: white;
+  color: white !important;
   padding: 16px 40px;
   border-radius: 12px;
 }
