@@ -1,0 +1,77 @@
+:root {
+  /* Color Palette adapted from erp-frontend */
+  --primary: #222222;          /* Deep dark for buttons/main text */
+  --primary-light: #444444;
+  --primary-dark: #111111;
+  --bg-dark: #f8f8f6;          /* Cream/off-white background from Usuarios.jsx */
+  --bg-card: #ffffff;          /* Pure white for cards */
+  --text-main: #111111;        /* Near black for headers */
+  --text-dim: #888888;         /* Gray for secondary text */
+  --accent: #2a7a2a;           /* Green accent for success/active states */
+  --accent-light: #f4faf4;
+  --border: #e0e0da;           /* Light border color found in frontend */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Parallax Utilities */
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

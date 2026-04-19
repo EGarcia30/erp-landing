@@ -1,0 +1,163 @@
+.dte-section {
+  background-color: white;
+  border-top: 1px solid var(--border);
+}
+
+.dte-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.dte-visual-side {
+  display: flex;
+  justify-content: center;
+}
+
+.digital-invoice-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+}
+
+.invoice-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.invoice-icon-box {
+  width: 50px;
+  height: 50px;
+  background: #f8f8f6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.invoice-meta h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.invoice-meta p {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.invoice-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 20px;
+}
+
+.invoice-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+.invoice-total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 2px solid var(--text-main);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--text-main);
+}
+
+.invoice-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.qr-box {
+  width: 70px;
+  height: 70px;
+  background: #f8f8f6;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.sello-mh {
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #c8e6c8;
+}
+
+.dte-main-description {
+  font-size: 18px;
+  color: var(--text-dim);
+  margin: 24px 0 40px;
+  line-height: 1.7;
+}
+
+.dte-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.benefit-row {
+  display: flex;
+  gap: 20px;
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  background: #fcfcfb;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.benefit-content h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.benefit-content p {
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .dte-grid-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .dte-visual-side { order: 2; }
+  .dte-text-side { order: 1; text-align: center; }
+  .benefit-row { text-align: left; }
+}
