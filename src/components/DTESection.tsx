@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Zap, FileText } from 'lucide-react';
 import './DTESection.css';

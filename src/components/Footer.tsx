@@ -1,4 +1,3 @@
-import React from 'react';
 import { Globe, Send, Camera, Users } from 'lucide-react';
 import './Footer.css';
 
